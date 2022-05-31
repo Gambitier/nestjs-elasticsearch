@@ -30,6 +30,13 @@ username: elastic
 password: Test@123 (the one set in .env file)
 ```
 
+https://localhost:9200/
+
+```
+username: elastic
+password: Test@123 (the one set in .env file)
+```
+
 ## Stop and remove the deployment
 
 To stop the cluster, run docker-compose down. The data in the Docker volumes is preserved and loaded when you restart the cluster with docker-compose up.
