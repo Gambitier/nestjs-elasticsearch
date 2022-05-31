@@ -25,16 +25,29 @@ docker-compose up -d
 
 3. When the deployment has started, open a browser and navigate to http://localhost:5601 to access Kibana, where you can load sample data and interact with your cluster.
 
+```
+username: elastic
+password: Test@123 (the one set in .env file)
+```
+
 ## Stop and remove the deployment
 
 To stop the cluster, run docker-compose down. The data in the Docker volumes is preserved and loaded when you restart the cluster with docker-compose up.
 
 ```
+
 docker-compose down
+
 ```
 
 To delete the network, containers, and volumes when you stop the cluster, specify the -v option:
 
 ```
+
 docker-compose down -v
+
+```
+
+```
+
 ```
